@@ -1,0 +1,67 @@
+
+
+/* mobile */
+@media (max-width: 740px) {
+    .navbar__list {
+        width: 150px;
+    }
+
+    .navbar__list-link {
+        font-size: 2.2rem;
+        padding: 28px 8px;
+    }
+
+    .navbar__backgroud.open {
+        left: 166px;
+    }
+
+    .heading {
+        font-size: 1.8rem;
+        margin-right: 0;
+    }
+
+    .footer {
+        flex-direction: column;
+        padding-bottom: 80px;
+    }
+
+    .communications {
+        margin-bottom: 24px;
+        font-size: 1.6rem;
+    }
+
+    .communication {
+        line-height: 2.4rem;
+    }
+
+    .communication:first-child .communication__icon {
+        margin-right: 8px;
+    }
+
+    .communication__icon {
+        margin-right: 12px;
+    }
+
+    .form__message {
+        flex-direction: column;
+    }
+
+    .form__message__input {
+        width: 100%;
+        margin-top: 8px;
+    }
+
+    .form__button {
+        width: 100%;
+    }
+}
+
+@media (max-height: 530px) {
+    .navbar__list-link {
+        padding: 10px 22px;
+    }
+
+    .navbar__list-item:last-child {
+        margin-top: 0;
+    }
+}

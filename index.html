@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/logo_name.png">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.2.1-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400, 500, 700&display=swap&subset=vietnamese"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <p class="contact">LH: Nguyễn Đình Thông</p>
+        <header class="header">
+            <nav class="nav">
+                <i class="fa-solid fa-bars nav__menu-icon-open open"></i>
+                <i class="fa-solid fa-bars nav__menu-icon-close"></i>
+                <div class="navbar">
+                    <ul class="navbar__list">
+                        <li class="navbar__list-item">
+                            <a class="navbar__list-link" href="https://www.facebook.com/30.10thong" target="_blank">
+                                <i class="fa-brands fa-square-facebook"></i>
+                                Facebook
+                            </a>
+                        </li>
+                        <li class="navbar__list-item">
+                            <a class="navbar__list-link" href="https://github.com/thong24506" target="_blank">
+                                <i class="fa-brands fa-square-github"></i>
+                                GitHub
+                            </a>
+                        </li>
+                        <li class="navbar__list-item">
+                            <a class="navbar__list-link" href="https://www.instagram.com/3_3nd_thong/" target="_blank">
+                                <i class="fa-brands fa-square-instagram"></i>
+                                Instagram
+                            </a>
+                        </li>
+                        <li class="navbar__list-item">
+                            <a href="#" class="navbar__list-link">
+                                <i class="fa-brands fa-square-twitter"></i>
+                                Twitter
+                            </a>
+                        </li>
+                        <li class="navbar__list-item">
+                            <audio controls autoplay class="navbar__list-audio">
+                                <source src="./assets/audio/NgayMaiEmDiMatLofiVersion-DatGKhaiDang-7793790.mp3" type="audio/mpeg">
+                            </audio>
+                        </li>
+                    </ul>
+                    <div class="navbar__backgroud"></div>
+                </div>
+            </nav>
+            <div class="heading">Personal Website</div>
+            <div class="logo-img">
+                <img class="logo-img__my-logo" src="./assets/img/logo_name.png" alt="My Logo">
+            </div>
+        </header>
+        <div class="content">
+            <div class="img">
+                <img class="img__element" src="./assets/img/img-1.jpg" alt="">
+            </div>
+            <div class="img">
+                <img class="img__element" src="./assets/img/img-2.jpg" alt="">
+            </div>
+            <div class="img">
+                <img class="img__element" src="./assets/img/img-3.jpg" alt="">
+            </div>
+            <div class="img">
+                <img class="img__element" src="./assets/img/img-4.jpg" alt="">
+            </div>
+            <div class="img">
+                <img class="img__element" src="./assets/img/img-5.jpg" alt="">
+            </div>
+            <div class="img">
+                <img class="img__element" src="./assets/img/img-6.jpg" alt="">
+            </div>
+            <div class="img">
+                <img class="img__element" src="./assets/img/img-7.jpg" alt="">
+            </div>
+            <div class="img">
+                <img class="img__element" src="./assets/img/img-8.jpg" alt="">
+            </div>
+            <div class="img">
+                <img class="img__element" src="./assets/img/img-9.jpg" alt="">
+            </div>
+            <div class="img">
+                <img class="img__element" src="./assets/img/img-10.jpg" alt="">
+            </div>
+            <div class="img">
+                <img class="img__element" src="./assets/img/img-11.jpg" alt="">
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="communications">
+                <div class="communication">
+                    <i class="fa-solid fa-house communication__icon"></i>
+                    123 Nguyễn Đình Thông
+                </div>
+                <div class="communication">
+                    <i class="fa-solid fa-phone communication__icon"></i>
+                    <a class="communication__link" href="tel:0123456789">0123456789</a>
+                </div>
+                <div class="communication">
+                    <i class="fa-solid fa-envelope communication__icon"></i>
+                    <a class="communication__link" href="mailto:nguyenvan@gmail.com">nguyenvan@gmail.com</a>
+                </div>
+            </div>
+            <form class="form">
+                <div class="form__message">
+                    <input class="form__message__input" name="name" type="text" placeholder="Name" required>
+                    <input class="form__message__input" name="email" type="email" placeholder="Email" required>
+                </div>
+                <button class="form__button" name="button" value="OK" type="submit" onclick="send()" >SEND</button>
+            </form>
+        </footer>
+    </div>
+
+    <script>
+        const navMenuIconOpen = document.querySelector('.nav__menu-icon-open')
+        const navMenuIconClose = document.querySelector('.nav__menu-icon-close')
+        const navBar = document.querySelector('.navbar')
+        const navBarBackgroud = document.querySelector('.navbar__backgroud')
+        navMenuIconOpen.addEventListener('click', function () {
+            navBar.classList.add('open')
+            navBarBackgroud.classList.add('open')
+            navMenuIconClose.classList.add('open')
+            navMenuIconOpen.classList.remove('open')
+        })
+        navMenuIconClose.addEventListener('click', function () {
+            navBar.classList.remove('open')
+            navBarBackgroud.classList.remove('open')
+            navMenuIconClose.classList.remove('open')
+            navMenuIconOpen.classList.add('open')
+        })
+        navBarBackgroud.addEventListener('click', function () {
+            navBar.classList.remove('open')
+            navBarBackgroud.classList.remove('open')
+            navMenuIconClose.classList.remove('open')
+            navMenuIconOpen.classList.add('open')
+        })
+        function send(){  
+            alert("Đã gửi thông tiên liên hệ");  
+        }  
+
+    </script>
+</body>
+
+</html>
